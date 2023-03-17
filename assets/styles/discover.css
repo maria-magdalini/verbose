@@ -19,19 +19,27 @@
 
 .discover-cnt{
     
-    background-color: var(--blue);
-   
+    background-image: url("../images/skiathos.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     width:100%;
-    height: 50vh;
+    height: 80vh;
+    display: grid;
    
 }   
 
+@keyframes discover {
+    0%{width: 100%;height: 100%; opacity:0;}
+    100%{width: 70%;height: 80%; opacity:1;}
+    
+}
 
 .discover-text-wrapper{
-   
+   animation: discover 1s ease-in forwards;
     height: 400px;
     height: 100%;
-    background-color: rgba(242, 242, 242, 0.93);  
+    background-color: rgba(242, 242, 242, 0.33);  
     width: 70%;
     margin: auto;
     text-align: center;
@@ -45,7 +53,10 @@
    word-break: break;
    font-size: 3rem;
    font-weight: bold;
-   
+   background-color: rgba(242, 242, 242, 0.33);  
+   box-shadow: 2px 1px 200px 68px rgba(242,242,242,0.52);
+-webkit-box-shadow: 2px 1px 200px 68px rgba(242,242,242,0.52);
+-moz-box-shadow: 2px 1px 200px 68px rgba(242,242,242,0.52);
 }
 
 .family{
