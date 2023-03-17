@@ -1,0 +1,111 @@
+:root{
+    --orange:#ff7f50;
+    --blue:#7FCDCD;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI',  monospace;
+    
+
+   
+}
+
+
+.discover-cnt{
+    
+    background-color: var(--blue);
+   
+    width:100%;
+    height: 50vh;
+   
+}   
+
+
+.discover-text-wrapper{
+   
+    height: 400px;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 0.93);  
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    
+}
+
+.discover-text-wrapper h2{
+   color: var(--orange);
+   word-break: break;
+   font-size: 3rem;
+   font-weight: bold;
+   
+}
+
+.family{
+    color: var(--orange);
+}
+.family-cnt{
+    
+    padding: 25px;
+    line-height: 25px;
+}
+.family-cnt .family-img-cnt img{
+    width: 100%;
+    padding-top:50px ;
+    
+}
+
+.store-view-cnt{
+    height: max-content;
+}
+.store-view-cnt img{
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+
+@media (min-width:900px){
+    .family-cnt{
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+    
+    }
+    .family-cnt .family-img-cnt img{
+        width: 100%;
+        
+        
+    }
+    .family-cnt .family{
+        width: 80%;
+        padding-left: 10%;
+        
+        
+        
+    }
+    .family-cnt .family-text-wrapper {padding-top: 35px;}
+
+    .family-cnt .family-text-wrapper .family-text{
+        font-size: 1.8rem;
+        line-height: 30px;
+        
+    }
+
+    .family-cnt .family-text-wrapper{
+        overflow-y: scroll;
+        -ms-overflow-style: none; 
+        scrollbar-width: 1px; 
+        scrollbar-base-color: var(--orange); 
+        scrollbar-color: var(--orange);
+       
+        height: 50%;
+    }
+}
