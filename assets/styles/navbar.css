@@ -192,7 +192,7 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
        left: 0;
        transform: translateX(-100%);
        z-index: -1;
-       line-height: 0px;
+       line-height: 100px;
        transition: .6s;
 
    
@@ -224,3 +224,18 @@ nav .navbar-toggler{margin: 0px; cursor: none;}
     nav .navbar-toggler{margin: 0px;}
     .acropolis{font-size: 1.3rem;}
     }
+
+
+@media (min-height:500px) and (max-height:700px){
+    nav .nav-list{
+        line-height:70px;
+    }
+}
+
+
+
+@media (min-height:300px) and (max-height:499px){
+    nav .nav-list{
+        line-height:45px;
+    }
+}

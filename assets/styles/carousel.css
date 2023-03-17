@@ -167,10 +167,11 @@ display: block;
 
 }
 
-@media (max-width:500px){
+@media (max-width:500px) or (max-height:500px){
     .carousel-button{top: 20%;
     transition: .3s;}
     .atv-desc{line-height: 25px;}
 }
+
 
 
