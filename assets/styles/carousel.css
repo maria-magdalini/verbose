@@ -12,16 +12,23 @@ section{
     height: 80vh;
     width: 100%;
     background-color: var(--blue);
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.for-rent{
+    position: absolute;
+    top: 15px;
+    
 }
 
 
-
 .carousel {
-
+    
     width: 80%;
-    height: 90%;
+    height: 70%;
     position: relative;
     display: flex;
     background-color: white;
@@ -126,6 +133,10 @@ display: block;
     color: black;
     font-size: clamp(0.85rem, 2vw, 1.5rem);
     line-height:35px;
+}
+
+.checked{
+    color: var(--orange);
 }
 
 #second-carousel{

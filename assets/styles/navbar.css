@@ -37,7 +37,7 @@ nav{
 
 }
 .logo-wrapper{
-    display: flex;
+   display: flex;
    gap: 50px;
    align-items: center;
    height: 100%;
@@ -49,6 +49,7 @@ nav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: relative;
 }
 .since-date{
     
@@ -59,10 +60,10 @@ nav{
 
 .logo{
     height: 80px;
-    width: 70px;
+    right: -100px;
     transform:scaleX(-1);
     position: absolute;
-    padding-left: -350px
+    padding-left: -350px;
    
 }
 

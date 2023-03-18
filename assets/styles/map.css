@@ -1,8 +1,16 @@
+body{
+    overflow-x: hidden;
+}
 .map-wrapper{
  display: grid;
  place-content: center;
  position: relative;
+ margin-top: 50px;
+ width: 100%;
 }
 iframe{
+    overflow-x: scroll;
+    width: 80%;
+    margin: auto;
     
 }
