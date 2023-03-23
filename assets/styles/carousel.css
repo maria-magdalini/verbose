@@ -9,7 +9,7 @@ body{
     margin: 0;
     }
 section{
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     background-color: var(--blue);
     display: flex;
@@ -145,6 +145,7 @@ display: block;
 
 
     @media (max-width:800px){
+        .atv-desc{line-height: 20px}
         .carousel-button{
             cursor: none;
         }
@@ -181,7 +182,7 @@ display: block;
 @media (max-width:500px) or (max-height:500px){
     .carousel-button{top: 20%;
     transition: .3s;}
-    .atv-desc{line-height: 25px;}
+  
 }
 
 

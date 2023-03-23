@@ -68,6 +68,7 @@
 
 .family{
     color: var(--orange);
+    font-size:20px;
 }
 .family-cnt{
     
@@ -81,7 +82,13 @@
 }
 
 .store-view-cnt{
-    height: max-content;
+    height: 50vh;
+    width: 100%;
+    background-image: url('../images/Store\ View.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .store-view-cnt img{
     width: 100%;
@@ -112,17 +119,13 @@
     .family-cnt .family-text-wrapper {padding-top: 35px;}
 
     .family-cnt .family-text-wrapper .family-text{
-        font-size: 1.8rem;
+        font-size: 1.1rem;
         line-height: 30px;
         
     }
 
     .family-cnt .family-text-wrapper{
-        overflow-y: scroll;
-        -ms-overflow-style: none; 
-        scrollbar-width: 1px; 
-        scrollbar-base-color: var(--orange); 
-        scrollbar-color: var(--orange);
+    
        
         height: 50%;
     }
