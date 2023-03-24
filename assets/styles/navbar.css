@@ -2,7 +2,9 @@
     --orange:#ff7f50;
     --blue:#7FCDCD;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 
 *{
     margin: 0;
