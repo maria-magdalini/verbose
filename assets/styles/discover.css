@@ -159,6 +159,6 @@
         justify-content: center !important;
     } 
     .family-img-cnt img{
-        right: 0;
+        right: 0 !important;
     }
 }
