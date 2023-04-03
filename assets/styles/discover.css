@@ -38,7 +38,7 @@
 
 .discover-text-wrapper{
    animation: discover 1s ease-in forwards;
-    width: 50%;
+    width: 35%;
     height: 80%;
     background-color: rgba(242, 242, 242, 0.33);  
     margin: auto;
@@ -69,16 +69,33 @@
 
 .family{
     color: var(--orange);
-    font-size:20px;
+    font-size: clamp(12px, 16px, 20px);
 }
 .family-cnt{
     
-    padding: 25px;
-    line-height: 25px;
+    display: flex;
+    
 }
+
+.family-cnt .family-img-cnt {
+    width: 50%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+
 .family-cnt .family-img-cnt img{
-    width: 100%;
-    padding-top:50px ;
+    width: 70%;
+    position: relative;
+    right: 25px;
+    height: 95%;
+    object-fit: contain;
+    box-sizing: border-box;
+    padding: 20px 0px;
+   
     
 }
 
@@ -94,30 +111,22 @@
 .store-view-cnt img{
     width: 100%;
     height: 100%;
-    display: block;
+  
 
+
+}
+.family-cnt .family-text-wrapper {padding-top: 35px; width: 50%;}
+
+.family-cnt .family{
+    width: 80%;
+    padding-left: 10%;
+    
+    
+    
 }
 
 @media (min-width:900px){
-    .family-cnt{
-        display: inline-grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 50px;
     
-    }
-    .family-cnt .family-img-cnt img{
-        width: 100%;
-        
-        
-    }
-    .family-cnt .family{
-        width: 80%;
-        padding-left: 10%;
-        
-        
-        
-    }
-    .family-cnt .family-text-wrapper {padding-top: 35px;}
 
     .family-cnt .family-text-wrapper .family-text{
         font-size: 1.1rem;
@@ -125,21 +134,31 @@
         
     }
 
-    .family-cnt .family-text-wrapper{
-    
-       
-        height: 50%;
-    }
-
+ 
 }
 
 @media (max-width:900px){
+    .family-cnt .family-text-wrapper{
+        width: initial;
+    }
     
+    .family-cnt{
+        display: grid;
+    }
     .discover-text-wrapper{
         animation: none;
         position: relative;
         width: 100% ;
         right: 0;
 
+    }
+
+    .family-img-cnt {
+        
+        width: 100% !important;
+        justify-content: center !important;
+    } 
+    .family-img-cnt img{
+        right: 0;
     }
 }
