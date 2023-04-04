@@ -7,7 +7,7 @@ footer{
 .footer-wrapper{
     width: 100%;
     background-color: rgb(255, 226, 206);
-    height: max-content;
+    height: 400px;
     margin-top: 50px;
     display: grid;
     place-items: center;
@@ -21,7 +21,7 @@ footer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     width: 80%;
-    height: 400px;
+    
     justify-content: space-evenly;
     align-items: center;
 }
@@ -41,7 +41,7 @@ footer{
 }
 
 .contact-info-cnt p{
-    font-size:clamp(1rem,1vw,2rem) ;
+    font-size:clamp(.7rem,.8rem,2rem) ;
 }
 
 
@@ -67,4 +67,10 @@ footer{
 .contact-underline:hover::after{
     width: 50%;
     
+}
+@media (max-width:500px){
+   .contact-info-cnt{
+    text-align: center;
+    
+   }
 }
