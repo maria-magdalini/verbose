@@ -67,3 +67,9 @@ function changeMoto(photo){
     
     
 }
+
+
+
+
+var links = document.querySelectorAll('nav-link')
+console.log(links)

@@ -23,4 +23,9 @@ let motoInfoCnt = document.querySelector(".second-moto-specs")
 const imageWidth = document.querySelector("[data-active]").clientHeight;
 //const resizeSeconText = ()=>{motoInfoCnt.setAttribute.clientHeight = imageWidth}
 
-motoInfoCnt.setAttribute.clientHeight = imageWidth
+motoInfoCnt.setAttribute.clientHeight = imageWidth;
+
+
+
+var links = document.querySelectorAll('.nav-link')
+console.log(links[0])
