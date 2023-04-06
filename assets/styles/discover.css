@@ -59,7 +59,7 @@
    color: var(--orange);
    word-break: break;
    font-size: 3rem;
-   font-weight: bold;
+   font-weight: 300;
    animation: uncover 1.5s ease-in forwards;
    background-color: rgba(242, 242, 242, 0.33);  
    box-shadow: 2px 1px 200px 68px rgba(242,242,242,0.52);

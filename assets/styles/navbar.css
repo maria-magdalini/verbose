@@ -184,7 +184,7 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
         padding: 0 20px;
 
     }
-    .underline{max-width: 40% ;}
+    
 }
 @media (max-width: 1275px){
     nav .nav-list{
@@ -226,7 +226,7 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
 @media (max-width:450px){
     nav{height: 70px;}
     nav .nav-list{top: 70px;}
-    .logo-cnt{ display: none;}
+    .logo-cnt,.underline{ display: none;}
     .since-date{display: none;}
     .logo-wrapper{gap: 20px;}
     nav .navbar-toggler{margin: 0px; cursor: none;}
@@ -243,10 +243,8 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
         line-height:70px;
         top: 70px;
     }
-    nav{
-        height: 70px;
-    }
-    .logo,.since-date,.rental-text,.underline{display: none;}
+    
+    
 }
 
 
@@ -254,5 +252,13 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
 @media (min-height:300px) and (max-height:499px){
     nav .nav-list{
         line-height:45px;
+    }
+}
+
+@media (max-height:700px) {
+    
+    .logo,.since-date,.rental-text,.underline{display: none;}
+    nav{
+        height: 70px;
     }
 }
