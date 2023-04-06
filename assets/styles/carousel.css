@@ -131,8 +131,8 @@ display: block;
 
 .atv-desc{
     color: black;
-    font-size: clamp(0.85rem, 2vw, 1.5rem);
-    line-height:35px;
+    font-size: 1rem;
+    line-height:25px;
 }
 
 .checked{

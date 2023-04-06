@@ -25,7 +25,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2%;
+    padding: 0 20px;
     height: 100px;
     background: var(--orange);
     color: #f1f1f1;
@@ -57,21 +57,24 @@ nav{
 
 
 .logo{
-    height: 80px;
+    height: 65px;
     right: -100px;
     transform:scaleX(-1);
     position: absolute;
     padding-left: -350px;
+    top: -40px;
    
 }
 
 
 .logo-wrapper div .underline{
-    height: 3px;
-    width: inherit;
-    background-color:white ;
-    margin-left: -100px;
-    
+    width: 150%;
+    height: 2px;
+    background-color: white;
+    left: -20px;
+    position: absolute;
+    top: 55%;
+  
 }
 
 
