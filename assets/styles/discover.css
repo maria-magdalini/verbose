@@ -10,7 +10,7 @@
     outline: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Segoe UI',  monospace;
+    
     
 
    
@@ -19,7 +19,7 @@
 
 .discover-cnt{
     
-    background-image: url("../images/skiathos.jpg");
+    background-image: url("../images/skiathos.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
