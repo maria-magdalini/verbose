@@ -4,6 +4,17 @@ footer{
     width: 100%;
 }
 
+
+#map{
+    width: 100%;
+    height: 500px;
+}
+
+#map img{
+    height: 100%;
+    width: 80%;
+}
+
 .footer-wrapper{
     width: 100%;
     background-color: rgb(255, 226, 206);

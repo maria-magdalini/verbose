@@ -1,75 +1,35 @@
 import bikes from './bikes.js';
 
-// console.log(bikes.length)
-
-// scooters= [
-//     'People S.png',
-//     'Symphony 50cc.png',
-//     'Symphony 125cc.png',
-//     'symphony 200cc.png',
-//     'visio.png'
-// ]
+const button = document.querySelectorAll("[data-carousel-button]");
+const color = document.querySelector('.atv-specs').children[4];
 
 
+button.forEach(button => {
+    button.addEventListener("click", () => {
+        const offset = button.dataset.carouselButton === "next" ? 1 : -1;
+        
+        const slides = button.closest('[data-carousel]').querySelector("[data-slides]");
 
 
-const path = 'assets/images/bikes-png/';
-let clicks = 0;
+        const activeSlide = slides.querySelector("[data-active]")
+        let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+        console.log(newIndex);
+        if (newIndex <0 ) newIndex = slides.children.length -1;
+        if (newIndex >= slides.children.length ) newIndex = 0;
+       // console.log(slides.children[newIndex])
+        color.innerText="Colors : "+ bikes[newIndex].color;
 
-let carouselScooter = document.getElementById('scooter');
-carouselScooter.setAttribute('src', 'assets/images/bikes-png/'+bikes[0].scooteName+'.png')
-
-let next = document.querySelector('.next');
-
-let prev = document.querySelector('.prev');
-
-next.addEventListener('click',()=>{ 
-    clicks++
-    console.log(clicks)
-      
-    if (clicks >= bikes.length){
-        clicks=0
-        changeMoto(clicks)
-    }
-    else{
-        changeMoto(clicks)
-    }
-
-    
-})
-
-
-
-prev.addEventListener('click',()=>{
-   
-   
-    if (clicks < 0){
-        clicks = bikes.length-1
-        changeMoto(clicks)
-    } else if(clicks>0){
-        clicks--;
-        changeMoto(clicks)
-    }else{
-        clicks=bikes.length-1
-        changeMoto(clicks)
        
-    }
-    
-    
-    
+    })
 })
 
-
-function changeMoto(photo){
-
-    
-    carouselScooter.setAttribute('src', path +bikes[photo].scooteName+'.png');
-    
-    
-}
+let motoInfoCnt = document.querySelector(".second-moto-specs")
+const imageWidth = document.querySelector("[data-active]").clientHeight;
+//const resizeSeconText = ()=>{motoInfoCnt.setAttribute.clientHeight = imageWidth}
 
 
 
 
-var links = document.querySelectorAll('nav-link')
-console.log(links)
+
+var links = document.querySelectorAll('.nav-link')
+console.log(links[0])

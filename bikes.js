@@ -7,25 +7,25 @@
 
     },
     {
-        scooteName:"Symphony 50cc",
+        scooteName:"Symphony ST 50cc",
         scooterCc:50,
-        color:'white',
+        color:'White',
         licence:'A2'
     },
     {
-        scooteName:"Symphony 125cc",
+        scooteName:"Symphony ST 125cc",
         scooterCc:125,
         color:'Red',
         licence:'A2'
     },
     {
-        scooteName:"symphony 200cc",
+        scooteName:"Symphony ST 200cc",
         scooterCc:200,
         color:'Black',
         licence:'A2'
     },
     {
-        scooteName:"visio",
+        scooteName:" Honda Vision",
         scooterCc:200, 
         color:'Black',
         licence:'A2'

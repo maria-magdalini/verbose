@@ -3,7 +3,7 @@ body{
 }
 .map-wrapper{
  display: grid;
- place-content: center;
+ place-items: center;
  position: relative;
  margin-top: 50px;
  width: 100%;
