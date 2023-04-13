@@ -39,7 +39,7 @@ nav{
 .logo-wrapper{
    display: flex;
    gap: 50px;
-   align-items: center;
+   align-items: flex-end;
    height: 100%;
    width: 50%;
 }
@@ -60,11 +60,11 @@ nav{
 
 .logo{
     height: 65px;
-    right: -100px;
-    transform:scaleX(-1);
+    right: -120px;
+   
     position: absolute;
     padding-left: -350px;
-    top: -40px;
+    top: -46px;
    
 }
 
@@ -176,7 +176,7 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
    
 @media (max-width:953px){
     nav{
-        padding:  0 2rem;
+       
         transition: .4s;
     }
     nav .nav-list .nav-item{

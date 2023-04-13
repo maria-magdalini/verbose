@@ -16,12 +16,11 @@ section{
     justify-content: center;
     align-items: center;
     position: relative;
+    flex-direction: column;
 }
 
 .for-rent{
-    position: absolute;
-    top: 15px;
-    
+    padding: 20px 0;
 }
 
 
