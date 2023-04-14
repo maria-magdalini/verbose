@@ -15,13 +15,13 @@
     {
         scooteName:"Symphony ST 125cc",
         scooterCc:125,
-        color:'Red',
+        color:'Brown',
         licence:'A2'
     },
     {
         scooteName:"Symphony ST 200cc",
         scooterCc:200,
-        color:'Black',
+        color:'White',
         licence:'A2'
     },
     {

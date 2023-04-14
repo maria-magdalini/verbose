@@ -59,12 +59,12 @@ nav{
 
 
 .logo{
-    height: 65px;
-    right: -120px;
+    height: 50px;
+    right: -100px;
    
     position: absolute;
     padding-left: -350px;
-    top: -46px;
+    top: -30px;
    
 }
 
@@ -211,6 +211,10 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
         display: grid !important;
         
     }
+    .logo-wrapper{
+        align-items: center;
+    }
+
 }
 
 

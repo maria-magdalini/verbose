@@ -21,3 +21,18 @@ paggination.forEach(button => {
     })
 })
 
+
+// const motoPaggination = document.querySelectorAll(".pic-preview");
+
+// motoPaggination.forEach((moto, index)=>{
+//     moto.addEventListener('click', ()=> {
+        
+//         const activePic = document.querySelector('[data-scale]')
+//         motoPaggination[index].dataset.scale = true;
+        
+//         console.log(activePic , motoPaggination[index])
+//         delete activePic.dataset.scale
+//     })
+//   })
+
+
