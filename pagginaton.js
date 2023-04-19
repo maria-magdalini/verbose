@@ -6,9 +6,9 @@ paggination.forEach(button => {
        
         
         const slides = document.querySelector("[data-paggination-slides]");
-        console.log(slides)
+        // console.log(slides)
 
-        console.log([...slides.children])
+        // console.log([...slides.children])
         const activeSlide = slides.querySelector("[data-scale]")
         let newIndex = [...slides.children].indexOf(activeSlide) + offset;
         //console.log(newIndex)
@@ -22,17 +22,19 @@ paggination.forEach(button => {
 })
 
 
-// const motoPaggination = document.querySelectorAll(".pic-preview");
+const atvButtonPrev =  document.getElementById('atvPrev');
+const atvButtonNext =  document.getElementById('atvNext');
 
-// motoPaggination.forEach((moto, index)=>{
-//     moto.addEventListener('click', ()=> {
-        
-//         const activePic = document.querySelector('[data-scale]')
-//         motoPaggination[index].dataset.scale = true;
-        
-//         console.log(activePic , motoPaggination[index])
-//         delete activePic.dataset.scale
-//     })
-//   })
+atvButtonNext.addEventListener('click', ()=>{
+ pagg()
+})
 
 
+
+function pagg(){
+ const imgArray = document.querySelector(".atv-pics-preview")
+console.log(imgArray[0])
+ }
+
+
+// console.log(atvButtonNext, atvButtonPrev)
