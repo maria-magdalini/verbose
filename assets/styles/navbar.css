@@ -39,7 +39,7 @@ nav{
 .logo-wrapper{
    display: flex;
    gap: 50px;
-   align-items: flex-end;
+   align-items: center;
    height: 100%;
    width: 50%;
 }
@@ -186,7 +186,7 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
     }
     
 }
-@media (max-width: 1275px){
+@media (max-width: 1300px){
     nav .nav-list{
         display: grid;
        position: absolute;
@@ -227,7 +227,7 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
     .acropolis{font-size: 1.3rem;}
     }
 
-@media (max-width:450px){
+@media (max-width:510px){
     nav{height: 70px;}
     nav .nav-list{top: 70px;}
     .logo-cnt,.underline{ display: none;}
@@ -265,4 +265,10 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
     nav{
         height: 70px;
     }
+}
+
+
+@media (max-width:1600px)
+{
+    .nav-item{padding:0px 17px !important;}
 }
