@@ -25,7 +25,7 @@
         licence:'A2'
     },
     {
-        scooteName:" Honda Vision",
+        scooteName:" Honda Vision 200cc",
         scooterCc:200, 
         color:'Black',
         licence:'A2'

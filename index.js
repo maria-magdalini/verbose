@@ -1,7 +1,8 @@
 import bikes from './bikes.js';
 
-const button = document.querySelectorAll("[data-carousel-button]");
-const color = document.querySelector('.atv-specs').children[4];
+const button = document.querySelectorAll("[data-moto-button]");
+const color = document.querySelector('.atv-specs').children[5];
+const name = document.querySelector('.atv-specs').children[0];
 
 
 button.forEach(button => {
@@ -18,6 +19,7 @@ button.forEach(button => {
         if (newIndex >= slides.children.length ) newIndex = 0;
        // console.log(slides.children[newIndex])
         color.innerText="Colors : "+ bikes[newIndex].color;
+        name.innerText = bikes[newIndex].scooteName;
 
        
     })
