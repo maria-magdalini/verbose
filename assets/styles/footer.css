@@ -61,6 +61,11 @@ align-items: center;
 }
 
 
+.social-icons{
+    display: flex;
+    align-items: center;
+}
+
 @keyframes border{
     0%{width: 1px;}
     100%{width:100px;}
