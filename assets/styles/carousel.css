@@ -134,6 +134,11 @@ display: block;
     font-size: 1rem;
     line-height:25px;
 }
+@media(max-height:450px){
+    .atv-desc{
+        line-height: initial !important;
+    }
+}
 
 
 #moto-name,
