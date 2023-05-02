@@ -43,19 +43,19 @@
             </div>
         </div>
 
-        <label for="toggle" class="navbar-toggler">
+        <label for="toggle" class="navbar-toggler" tabindex="1">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </label>
 
         <ul class="nav-list">
-            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#Story" class="nav-link">Our-Story</a></li>
-            <li class="nav-item"><a href="#motorbikes" class="nav-link">Motorbikes</a></li>
-            <li class="nav-item"><a href="#atvs" class="nav-link">Quads-ATVS</a></li>
-            <li class="nav-item"><a href="#map" class="nav-link">Location</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" tabindex="2">Home</a></li>
+            <li class="nav-item"><a href="#Story" class="nav-link"tabindex="3">Our-Story</a></li>
+            <li class="nav-item"><a href="#motorbikes" class="nav-link"tabindex="4">Motorbikes</a></li>
+            <li class="nav-item"><a href="#atvs" class="nav-link"tabindex="5">Quads-ATVS</a></li>
+            <li class="nav-item"><a href="#map" class="nav-link"tabindex="6">Location</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link"tabindex="7">Contact</a></li>
         </ul>
     </nav>
 
@@ -232,7 +232,9 @@
     </section>
 
     <div class="map-wrapper" id="map">
-        <button><a href="https://goo.gl/maps/tSqPqc7evDibLTqu6"></a></button>
+        <button id="openInMaps">
+            <a href="https://goo.gl/maps/8PpGcrZixA7fwSy18" target="_blank">Open in maps</a>
+        </button>
         <img src="assets/images/icons/map skiathos.png" alt="map">
         <img src="assets/images/icons/map 2.png" alt="map">
     </div>
