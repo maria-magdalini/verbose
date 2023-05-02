@@ -14,7 +14,7 @@ footer{
 
 #map img{
     height: 100%;
-    width: 80%;
+    width: 65%;
 }
 
 .footer-wrapper{
@@ -149,6 +149,11 @@ padding-right: 5px;
 
    .footer-wrapper{
     height:max-content;
+    overflow: clip;
    
    }
+   #map img{
+    height: 100%;
+    width: 140%;
+}
 }
