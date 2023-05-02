@@ -2,6 +2,8 @@
 footer{
     height: 600px;
     width: 100%;
+   
+    
 }
 
 
@@ -16,23 +18,27 @@ footer{
 }
 
 .footer-wrapper{
+    
     width: 100%;
     background-color: rgb(255, 226, 206);
-    height: 400px;
-    margin-top: 50px;
+    
+    height: 300px;
     display: grid;
     place-items: center;
-    overflow-x:hidden ;
+ 
     
     
+}
+
+.contact-us-cnt h2{
+    padding: 100px 0px;
 }
 
 .contact-info-cnt{
     word-break:normal;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     width: 80%;
-    
     justify-content: space-evenly;
     align-items: center;
     grid-row-gap: 15px;
@@ -58,12 +64,54 @@ align-items: center;
 
 .contact-info-cnt p{
     font-size:clamp(.7rem,.8rem,2rem) ;
+    
 }
 
 
-.social-icons{
+.social-icons,.icons{
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.icons{
+padding-right: 5px;
+}
+.icons img{
+    width:22px;
+    height: 22px;
+    }
+
+
+.icons :nth-child(1)
+,.icons :nth-child(2),
+.icons :nth-child(3){
+    border-radius: 5px;
+   
+}
+
+.icons :nth-child(1):hover{
+    background-color:#4267B2;
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+.icons :nth-child(2):hover{
+    background: linear-gradient(21deg, rgba(249,206,52,1) 0%, rgba(238,42,123,1) 35%, rgba(98,40,215,1) 100%);
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+
+.icons :nth-child(3):hover{
+    background: #25D366;
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+
+
+
+.icons-cnt{
+    display:flex ;
 }
 
 .social-icons img {
@@ -97,5 +145,10 @@ align-items: center;
    .contact-info-cnt{
     text-align: center;
     
+   }
+
+   .footer-wrapper{
+    height:max-content;
+   
    }
 }
