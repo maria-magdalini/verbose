@@ -75,13 +75,14 @@ align-items: center;
 
 .contact-info-cnt p{
     font-size:clamp(.7rem,.8rem,2rem) ;
-    
+    padding: 5px;
+    text-align: center;
 }
 
 
 .social-icons,.icons{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: space-around;
 }
@@ -99,26 +100,31 @@ padding-right: 5px;
 ,.icons :nth-child(2),
 .icons :nth-child(3){
     border-radius: 5px;
+    margin: 5px;
    
 }
 
-.icons :nth-child(1):hover{
-    background-color:#4267B2;
-    transform: scale(1.1);
-    transition: transform .2s;
+.icons :nth-child(1){
+    background:#4267B2;
+   
 }
-.icons :nth-child(2):hover{
+
+.icons :nth-child(2){
     background: linear-gradient(21deg, rgba(249,206,52,1) 0%, rgba(238,42,123,1) 35%, rgba(98,40,215,1) 100%);
-    transform: scale(1.1);
-    transition: transform .2s;
 }
 
-.icons :nth-child(3):hover{
+.icons :nth-child(3){
     background: #25D366;
-    transform: scale(1.1);
-    transition: transform .2s;
+    
 }
 
+.icons :nth-child(1):hover,
+.icons :nth-child(2):hover,
+.icons :nth-child(3):hover{
+    background:transparent ;
+    transform: scale(1.1);
+    transition: all .2s;
+}
 
 
 .icons-cnt{
@@ -159,12 +165,15 @@ padding-right: 5px;
    }
 
    .footer-wrapper{
-    height:max-content;
+    height:500px;
     overflow: clip;
    
    }
    #map img{
     height: 100%;
     width: 140%;
-}
+  }
+  .email-cnt{
+    margin-top: 15px;
+  }
 }
