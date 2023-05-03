@@ -143,9 +143,9 @@ display: block;
 
 #moto-name,
 #atv-name{
-    border: 2px solid orange;
+    border: 2px solid var(--orange);
     text-align: center;
-    color: orange;
+    color: var(--orange);
     font-size: 1.2rem;
     font-weight: 500;
     border-radius: 5px;
