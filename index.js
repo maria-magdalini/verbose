@@ -32,7 +32,7 @@ button.forEach(button => {
 
 
 const atvButtons =  document.querySelectorAll("[data-atv-button]");
-const atvColor = document.getElementById('atvSpecsCnt').children[5];
+const atvColor = document.getElementById('atvSpecsCnt').children[6];
 const atvName = document.getElementById('atvSpecsCnt').children[0];
 
 
