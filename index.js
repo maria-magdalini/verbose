@@ -41,6 +41,7 @@ const atvSpecsChange = function(color, name, num , motoType){
         color.innerText="Colors : "+ motoType[num].color;
         name.innerText = motoType[num].scooteName;
         return
+      
 }
 
 const anon = function (){ 
@@ -56,8 +57,9 @@ const anon = function (){
         //
         if (newIndex <0 ) newIndex = slides.children.length -1;
         if (newIndex >= slides.children.length ) newIndex = 0;
-
+        
         atvSpecsChange(atvColor, atvName , newIndex , atvs)
+  
 
 }
 
