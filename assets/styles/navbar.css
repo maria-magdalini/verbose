@@ -23,6 +23,15 @@ html{
 }
 
 
+
+#nav-cnt{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -31,9 +40,7 @@ nav{
     height: 100px;
     background: var(--orange);
     color: #f1f1f1;
-    position: sticky;
-    top: 0;
-    z-index: 99;
+    
 
 }
 .logo-wrapper{
@@ -70,7 +77,7 @@ nav{
 
 
 .logo-wrapper div .underline{
-    width: 150%;
+    width: 120%;
     height: 2px;
     background-color: white;
     left: -20px;
@@ -90,12 +97,13 @@ nav .navbar-brand {
 
 nav .nav-list {
     display: flex;
+    padding-right: 8%;
 }
 
 nav .nav-list .nav-item{
     cursor: pointer;
     height: 100%;
-    padding: 0 30px;
+    padding: 0 20px;
     transition: .4s;
 }
 
@@ -227,7 +235,7 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
     .acropolis{font-size: 1.3rem;}
     }
 
-@media (max-width:510px){
+@media (max-width:710px){
     nav{height: 70px;}
     nav .nav-list{top: 70px;}
     .logo-cnt,.underline{ display: none;}

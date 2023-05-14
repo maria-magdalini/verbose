@@ -31,7 +31,7 @@
 
 @keyframes discover {
     0%{ opacity:1; right: 100%; }
-    100%{ opacity:1;  right: 25px;}
+    100%{ opacity:1;  right: 10%;}
     }
     
 
@@ -40,11 +40,13 @@
    animation: discover 1s ease-in forwards;
     width: 35%;
     height: 80%;
-    background-color: rgba(242, 242, 242, 0.33);  
+    background-color: rgba(242, 242, 242, 0.66);  
     margin: auto;
     text-align: center;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     
 }
@@ -57,16 +59,16 @@
 }
 .discover-text-wrapper h2{
    color: var(--orange);
-   word-break: break;
+   padding: 10px 0px;
    font-size: 3rem;
-   font-weight: 300;
+   font-weight: bold;
    animation: uncover 1.5s ease-in forwards;
    
 }
 
 .family{
     color: var(--orange);
-    font-size: clamp(12px, 16px, 20px);
+    font-size: clamp(12px, 30px, 35px);
 }
 .family-cnt{
     
@@ -77,7 +79,7 @@
 .family-cnt .family-img-cnt {
     width: 50%;
     position: relative;
-    height: 100%;
+  
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -87,7 +89,7 @@
 .family-cnt .family-img-cnt img{
     width: 70%;
     position: relative;
-    right: 25px;
+    right: 20%;
     height: 95%;
     object-fit: contain;
     box-sizing: border-box;
@@ -97,7 +99,7 @@
 }
 
 .store-view-cnt{
-    height: 50vh;
+    height: 90vh;
     width: 100%;
     background-image: url('../images/Store\ View.jpg');
     background-attachment: fixed;
@@ -112,31 +114,35 @@
 
 
 }
-.family-cnt .family-text-wrapper {padding-top: 35px; width: 50%;}
+.family-cnt .family-text-wrapper {
+    padding-top: 50px; 
+    width: 40%;
+    padding-left: 10%;
+    padding-bottom: 50px;
+
+}
 
 .family-cnt .family{
-    width: 80%;
-    padding-left: 10%;
-    
-    
-    
+    width: 80%; 
+    text-align: center;
 }
 
 @media (min-width:900px){
     
 
     .family-cnt .family-text-wrapper .family-text{
-        font-size: 1.1rem;
+        font-size: 1.7rem;
         line-height: 30px;
-        
+        text-align: center;
     }
 
  
 }
 
-@media (max-width:900px){
+@media (max-width:1204px){
     .family-cnt .family-text-wrapper{
-        width: initial;
+        width: 100%;
+        padding-left: 0%;
     }
     
     .family-cnt{
@@ -157,5 +163,11 @@
     } 
     .family-img-cnt img{
         right: 0 !important;
+        height: 85% !important;
     }
+    .family-cnt .family-text,
+    .family-cnt .family{
+        margin: auto;
+    }
+    
 }

@@ -2,8 +2,8 @@ const atvs= [
     {
         scooteName:"ATV Kymco 250cc",
         scooterCc:250,
-        color:'Red',
-        licence:'A2'
+        color:'Red, Blue, White, Black',
+        licence:'B'
 
     },
     {
@@ -16,7 +16,7 @@ const atvs= [
         scooteName:"ATV Kymco 300cc",
         scooterCc:300,
         color:'Red',
-        licence:'A2'
+        licence:'B'
     }
 ];
 
