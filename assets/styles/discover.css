@@ -168,6 +168,7 @@
     .family-cnt .family-text,
     .family-cnt .family{
         margin: auto;
+        font-size: 20px;
     }
     
 }
