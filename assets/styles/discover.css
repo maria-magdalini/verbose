@@ -114,6 +114,7 @@
 @media (max-width:900px){
     .store-view-cnt{
         background-attachment: unset;
+        background-position-x: 85%;
     }
     
 }
